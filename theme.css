@@ -1,34 +1,71 @@
-body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+.theme-dark {
+  /* Bases */
+  --color-base-00: #282828;
+  --color-base-10: #32302f;
+  --color-base-20: #32302f;
+  --color-base-25: #45403d;
+  --color-base-30: #45403d;
+  --color-base-35: #5a524c;
+  --color-base-40: #5a524c;
+  --color-base-50: #928374;
+  --color-base-60: #928374;
+  --color-base-70: #a89984;
+  --color-base-100: #d4be98;
+
+  /* Accent color */
+  --accent-h: 23.53;
+  --accent-s: 76.12%;
+  --accent-l: 60.59%;
+
+  /* Extended colors */
+  --color-black0: #141617;
+  --color-black1: #1d2021;
+  --color-red: #ea6962;
+  --color-orange: #e78a4e;
+  --color-yellow: #d8a657;
+  --color-green: #a9b665;
+  --color-cyan: #89b482;
+  --color-blue: #7daea3;
+  --color-purple: #d3869b;
+  --color-pink: #d3869b;
+
+  --color-red-rgb: 234, 105, 98;
+  --color-orange-rgb: 231, 138, 78;
+  --color-yellow-rgb: 216, 166, 87;
+  --color-green-rgb: 169, 182, 101;
+  --color-cyan-rgb: 137, 180, 130;
+  --color-blue-rgb: 125, 174, 163;
+  --color-purple-rgb: 211, 134, 155;
+  --color-pink-rgb: 211, 134, 155;
+
+  /* Surface colors */
+  --background-modifier-message: var(--color-black0);
+  --titlebar-background-focused: var(--color-black1);
+
+  /* Text colors */
+  --text-on-accent: #1b1b1b;
+
+  /* Fonts */
+  --font-interface-theme: 'Overpass';
+  --font-text-theme: 'Overpass';
+  --font-monospace-theme: 'JetbrainsMono Nerd Font Mono';
+
+  /* Code */
+  --code-keyword: var(--color-red);
+  --code-string: var(--color-cyan);
+  --code-property: var(--color-green);
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
+.is-mobile.theme-dark {
+  --color-base-00: #1d2021;
+  --color-base-10: #282828;
+  --color-base-20: #282828;
 }
 
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+.modal-sidebar {
+  --background-modifier-form-field: var(--color-base-25);
 }
 
-.menu {
-	padding: var(--size-2-1);
-}
-
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
-}
-
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+.tooltip {
+  color: var(--color-base-100);
 }
