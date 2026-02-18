@@ -1,6 +1,7 @@
 .theme-dark {
   /* Bases */
   --color-base-00: #282828;
+  --color-base-05: #282828;
   --color-base-10: #32302f;
   --color-base-20: #32302f;
   --color-base-25: #45403d;
@@ -57,9 +58,10 @@
 }
 
 .is-mobile.theme-dark {
-  --color-base-00: #1d2021;
-  --color-base-10: #282828;
-  --color-base-20: #282828;
+  --color-base-00: #141617;
+  --color-base-10: #1d2021;
+  --color-base-20: #1d2021;
+  --color-base-30: #282828;
 }
 
 .modal-sidebar {
