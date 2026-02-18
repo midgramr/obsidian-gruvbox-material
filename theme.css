@@ -71,3 +71,48 @@
 .tooltip {
   color: var(--color-base-100);
 }
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+  border-inline-end-style: unset;
+}
+
+.workspace-leaf-resize-handle:hover {
+  background-color: unset;
+  border-color: inherit;
+}
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  border-inline-start-style: unset;
+}
+
+.workspace-leaf,
+.workspace-sidedock-vault-profile {
+  border-right: 1px solid var(--color-base-30);
+}
+
+.HyperMD-header-1 {
+  color: var(--color-red);
+}
+
+.HyperMD-header-2 {
+  color: var(--color-orange);
+}
+
+.HyperMD-header-3 {
+  color: var(--color-yellow);
+}
+
+.HyperMD-header-4 {
+  color: var(--color-green);
+}
+
+.HyperMD-header-5 {
+  color: var(--color-blue);
+}
+
+.HyperMD-header-6 {
+  color: var(--color-purple);
+}
+
+.cm-formatting {
+  color: inherit;
+}
