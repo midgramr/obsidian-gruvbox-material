@@ -20,7 +20,9 @@
 
   /* Extended colors */
   --color-black0: #141617;
-  --color-black1: #1d2021;
+  --color-black1: #212121;
+  --color-black2: #242424;
+  --color-black3: #262626;
   --color-red: #ea6962;
   --color-orange: #e78a4e;
   --color-yellow: #d8a657;
@@ -41,7 +43,8 @@
 
   /* Surface colors */
   --background-modifier-message: var(--color-black0);
-  --titlebar-background-focused: var(--color-black1);
+  --titlebar-background-focused: var(--color-black2);
+  --titlebar-background: var(--color-base-00);
 
   /* Text colors */
   --text-on-accent: #1b1b1b;
@@ -58,14 +61,23 @@
 }
 
 .is-mobile.theme-dark {
-  --color-base-00: #141617;
-  --color-base-10: #1d2021;
-  --color-base-20: #1d2021;
-  --color-base-30: #282828;
+  --color-base-00: #282828;
+  --color-base-10: #222222;
+  --color-base-20: #282828;
+  --color-base-30: #222222;
+
+  --color-black3: #282828;
+
+  --nav-item-background-hover: var(--color-base-10);
+  --background-modifier-hover: var(--color-base-10);
 }
 
 .modal-sidebar {
   --background-modifier-form-field: var(--color-base-25);
+}
+
+.workspace-sidedock-vault-profile, .workspace-leaf, .status-bar {
+  background-color: var(--color-black3) !important;
 }
 
 .tooltip {
@@ -90,27 +102,27 @@
 }
 
 .HyperMD-header-1 {
-  color: var(--color-red);
+  color: rgb(var(--color-red-rgb), 0.85);
 }
 
 .HyperMD-header-2 {
-  color: var(--color-orange);
+  color: rgb(var(--color-orange-rgb), 0.85);
 }
 
 .HyperMD-header-3 {
-  color: var(--color-yellow);
+  color: rgb(var(--color-yellow-rgb), 0.85);
 }
 
 .HyperMD-header-4 {
-  color: var(--color-green);
+  color: rgb(var(--color-green-rgb), 0.85);
 }
 
 .HyperMD-header-5 {
-  color: var(--color-blue);
+  color: rgb(var(--color-blue-rgb), 0.85);
 }
 
 .HyperMD-header-6 {
-  color: var(--color-purple);
+  color: rgb(var(--color-purple-rgb), 0.85);
 }
 
 .cm-formatting {
